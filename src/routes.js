@@ -11,6 +11,7 @@ const routes = (router) => {
     router.post('/api/login', user_authentication_controller_1.Login);
     router.get('/api/user', user_authentication_controller_1.AuthenticatedUser);
     router.post('/api/logout', user_authentication_controller_1.Logout);
+    router.get('/api/testapi', user_authentication_controller_1.TestAPI);
 };
 exports.routes = routes;
 //# sourceMappingURL=routes.js.map

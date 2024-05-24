@@ -23,7 +23,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.Logout = exports.AuthenticatedUser = exports.Login = void 0;
+exports.TestAPI = exports.Logout = exports.AuthenticatedUser = exports.Login = void 0;
 const appDataSource_1 = require("../../appDataSource");
 const user_entity_1 = require("../../entity/auth/user.entity");
 const bcryptjs_1 = __importDefault(require("bcryptjs"));
@@ -76,4 +76,8 @@ const Logout = (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     });
 });
 exports.Logout = Logout;
+const TestAPI = (req, res) => __awaiter(void 0, void 0, void 0, function* () {
+    res.send("This is working");
+});
+exports.TestAPI = TestAPI;
 //# sourceMappingURL=user.authentication.controller.js.map
