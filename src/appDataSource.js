@@ -11,6 +11,6 @@ exports.AppDataSource = new typeorm_1.DataSource({
     database: process.env.DB_NAME,
     synchronize: true,
     logging: false,
-    entities: ["src/entity/**/*.ts"]
+    entities: ["src/entity/**/*.js"]
 });
 //# sourceMappingURL=appDataSource.js.map
